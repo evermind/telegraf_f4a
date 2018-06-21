@@ -5,3 +5,4 @@ RUN apt-get update && apt-get install -y python-pip bash && \
 COPY /templates/ /templates/
 COPY docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
+CMD ["telegraf"]
